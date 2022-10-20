@@ -1,6 +1,99 @@
 @import "reset";
 @import "mixins";
 
+
+
+
+
+#africa {
+   background: url("../img/travel.png") no-repeat center/cover;
+   min-height: 100vh;
+   border-bottom: #211e1e;
+   .africa {
+     &__title {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 40px;
+        flex-wrap: wrap;
+        & h1 {
+           font-weight: 400;
+           font-size: 14px;
+           line-height: 17px;
+           color: #FFFFFF;
+        }
+        & p {
+           font-weight: 400;
+           font-size: 14px;
+           color: #2C3E50;
+           margin: 0 10px;
+
+        }
+        & a {
+           width: 12px;
+           height: 6.88px;
+           color: #000000;
+        }
+     }
+
+      &__text {
+         display: flex;
+         align-content: center;
+         justify-content: center;
+         font-weight: 700;
+         font-size: 36px;
+         line-height: 44px;
+         text-align: center;
+         color: #FFFFFF;
+         padding-top: 23%;
+      }
+
+      &__block {
+
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin-top: 13%;
+         margin-left: 12%;
+         width: 1140px;
+         height: 160px;
+
+         background: #FFFFFF;
+         border-radius: 15px;
+
+         &--one {
+            text-align: center;
+            margin: 0 40px;
+
+            & a {
+               font-size: 22px;
+
+            }
+
+            & h4 {
+               font-weight: 700;
+               font-size: 20px;
+               line-height: 24px;
+               text-align: center;
+
+               color: #2C3E50;
+
+            }
+
+            & p {
+               font-weight: 400;
+               font-size: 14px;
+               line-height: 17px;
+               text-align: center;
+
+               color: #2C3E50;
+
+            }
+         }
+      }
+   }
+
+
+
 #header{
   background: #1E2024;
 }
@@ -52,4 +145,5 @@
        border: 1px solid white;
      }
   }
+
 }

@@ -21,6 +21,83 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#africa {
+  background: url("../img/travel.png") no-repeat center/cover;
+  min-height: 100vh;
+  border-bottom: #211e1e;
+}
+#africa .africa__title {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+}
+#africa .africa__title h1 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+#africa .africa__title p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #2C3E50;
+  margin: 0 10px;
+}
+#africa .africa__title a {
+  width: 12px;
+  height: 6.88px;
+  color: #000000;
+}
+#africa .africa__text {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 23%;
+}
+#africa .africa__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 13%;
+  margin-left: 12%;
+  width: 1140px;
+  height: 160px;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+#africa .africa__block--one {
+  text-align: center;
+  margin: 0 40px;
+}
+#africa .africa__block--one a {
+  font-size: 22px;
+}
+#africa .africa__block--one h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #2C3E50;
+}
+#africa .africa__block--one p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #2C3E50;
+
 #header {
   background: #1E2024;
 }
@@ -73,6 +150,6 @@ body {
   transform: translateY(-10px);
   background: transparent;
   border: 1px solid white;
+
 }
 
-/*# sourceMappingURL=style.css.map */
