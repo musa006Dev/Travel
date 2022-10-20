@@ -21,10 +21,62 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-
 .container {
   width: 90%;
   margin: 0 auto;
+}
+
+#header {
+  background: #1E2024;
+}
+#header .header {
+  display: flex;
+  padding: 30px 0;
+}
+#header .header__logo {
+  display: flex;
+}
+#header .header__logo p {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 12px;
+  color: #FFFFFF;
+}
+#header .header__course {
+  display: flex;
+  align-items: center;
+  padding-left: 106px;
+}
+#header .header__course p {
+  padding: 0 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #9099A3;
+}
+#header .header__btn {
+  padding-left: 40%;
+}
+#header .header__btn select {
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  outline: none;
+}
+#header .header__btn button {
+  width: 100px;
+  height: 40px;
+  background: #1A5CFF;
+  box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
+  border-radius: 15px;
+  margin: 0 30px;
+  transition: 0.7s;
+  color: white;
+}
+#header .header__btn button:hover {
+  transition: 0.7s;
+  transform: translateY(-10px);
+  background: transparent;
+  border: 1px solid white;
 }
 
 #africa {
@@ -97,59 +149,115 @@ body {
   line-height: 17px;
   text-align: center;
   color: #2C3E50;
-
-#header {
-  background: #1E2024;
 }
 
-.header {
-  display: flex;
-  padding: 30px 0;
+#margulan {
+  background: #211e1e;
 }
-.header__logo {
-  display: flex;
-}
-.header__logo p {
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 12px;
-  color: #FFFFFF;
-}
-.header__course {
+#margulan .margulan {
   display: flex;
   align-items: center;
-  padding-left: 106px;
+  justify-content: space-between;
+  padding: 115px 0;
 }
-.header__course p {
-  padding: 0 20px;
-  font-weight: 500;
+#margulan .margulan__one--block {
+  padding: 2px 8px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 510px;
+  height: 217px;
+  left: 80px;
+  top: 702px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+#margulan .margulan__one--block img {
+  flex-wrap: wrap;
+  margin: 5px 6px;
+}
+#margulan .margulan__one--block p {
+  font-weight: 700;
   font-size: 14px;
-  color: #9099A3;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #FFFFFF;
 }
-.header__btn {
-  padding-left: 40%;
+#margulan .margulan__one--button {
+  margin: 20px 0;
 }
-.header__btn select {
-  border-radius: 10px;
-  background: transparent;
-  color: white;
-  outline: none;
+#margulan .margulan__one--button h1 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 54px;
+  text-transform: capitalize;
+  color: #FFFFFF;
 }
-.header__btn button {
-  width: 100px;
+#margulan .margulan__one--button button {
+  width: 180px;
   height: 40px;
+  left: 80px;
+  top: 993px;
+  margin: 20px 0;
   background: #1A5CFF;
   box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
   border-radius: 15px;
-  margin: 0 30px;
+  font-weight: 900;
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #FFFFFF;
   transition: 0.7s;
-  color: white;
 }
-.header__btn button:hover {
+#margulan .margulan__one--button button:hover {
   transition: 0.7s;
   transform: translateY(-10px);
-  background: transparent;
+  background: none;
   border: 1px solid white;
-
+}
+#margulan .margulan__one--button h6 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+#margulan .margulan__two {
+  width: 510px;
+  height: 520px;
+  left: 610px;
+  top: 702px;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+#margulan .margulan__two--text {
+  margin: 0 20px;
+}
+#margulan .margulan__two--text p {
+  margin-top: 50px;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #9099A3;
+}
+#margulan .margulan__two--text h1 {
+  font-weight: 800;
+  font-size: 34px;
+  text-transform: capitalize;
+  margin: 20px 0;
+  color: #2C3E50;
+}
+#margulan .margulan__two--text h6 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #2C3E50;
+}
+#margulan .margulan__two--fon {
+  margin-left: 45%;
+}
+#margulan .margulan__two--fon img {
+  margin-top: -38px;
 }
 
+/*# sourceMappingURL=style.css.map */
