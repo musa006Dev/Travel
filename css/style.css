@@ -12,8 +12,67 @@ ul, ol, li {
   list-style: none;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+#header {
+  background: #1E2024;
+}
+
+.header {
+  display: flex;
+  padding: 30px 0;
+}
+.header__logo {
+  display: flex;
+}
+.header__logo p {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 12px;
+  color: #FFFFFF;
+}
+.header__course {
+  display: flex;
+  align-items: center;
+  padding-left: 106px;
+}
+.header__course p {
+  padding: 0 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #9099A3;
+}
+.header__btn {
+  padding-left: 40%;
+}
+.header__btn select {
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  outline: none;
+}
+.header__btn button {
+  width: 100px;
+  height: 40px;
+  background: #1A5CFF;
+  box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
+  border-radius: 15px;
+  margin: 0 30px;
+  transition: 0.7s;
+  color: white;
+}
+.header__btn button:hover {
+  transition: 0.7s;
+  transform: translateY(-10px);
+  background: transparent;
+  border: 1px solid white;
 }
 
 /*# sourceMappingURL=style.css.map */
