@@ -2,148 +2,177 @@
 @import "mixins";
 
 
+#header {
+  background: #1E2024;
 
+  .header {
+    display: flex;
+    padding: 30px 0;
 
+    &__logo {
+      display: flex;
+
+      & p {
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 12px;
+        color: #FFFFFF;
+      }
+    }
+
+    &__course {
+      display: flex;
+      align-items: center;
+      padding-left: 106px;
+
+      & p {
+        padding: 0 20px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #9099A3;
+      }
+    }
+
+    &__btn {
+      padding-left: 40%;
+
+      & select {
+        border-radius: 10px;
+        background: transparent;
+        color: white;
+        outline: none;
+      }
+
+      & button {
+        width: 100px;
+        height: 40px;
+        background: #1A5CFF;
+        box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
+        border-radius: 15px;
+        margin: 0 20px;
+        transition: .7s;
+        color: white;
+      }
+
+      & button:hover {
+        transition: .7s;
+        transform: translateY(-10px);
+        background: transparent;
+        border: 1px solid white;
+      }
+    }
+  }
+}
 
 #africa {
-   background: url("../img/travel.png") no-repeat center/cover;
-   min-height: 100vh;
-   border-bottom: #211e1e;
-   .africa {
-     &__title {
-        display: flex;
-        justify-content: flex-end;
-        padding: 20px 40px;
-        flex-wrap: wrap;
-        & h1 {
-           font-weight: 400;
-           font-size: 14px;
-           line-height: 17px;
-           color: #FFFFFF;
-        }
-        & p {
-           font-weight: 400;
-           font-size: 14px;
-           color: #2C3E50;
-           margin: 0 10px;
+  background: url("../img/travel.png") no-repeat center/cover;
+  min-height: 100vh;
+  border-bottom: #211e1e;
 
-        }
-        & a {
-           width: 12px;
-           height: 6.88px;
-           color: #000000;
-        }
-     }
+  .africa {
+    &__title {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px 40px;
+      flex-wrap: wrap;
 
-      &__text {
-         display: flex;
-         align-content: center;
-         justify-content: center;
-         font-weight: 700;
-         font-size: 36px;
-         line-height: 44px;
-         text-align: center;
-         color: #FFFFFF;
-         padding-top: 23%;
+      & h1 {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
       }
 
-      &__block {
+      & p {
+        font-weight: 400;
+        font-size: 14px;
+        color: #2C3E50;
+        margin: 0 10px;
 
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         margin-top: 13%;
-         margin-left: 12%;
-         width: 1140px;
-         height: 160px;
-
-         background: #FFFFFF;
-         border-radius: 15px;
-
-         &--one {
-            text-align: center;
-            margin: 0 40px;
-
-            & a {
-               font-size: 22px;
-
-            }
-
-            & h4 {
-               font-weight: 700;
-               font-size: 20px;
-               line-height: 24px;
-               text-align: center;
-
-               color: #2C3E50;
-
-            }
-
-            & p {
-               font-weight: 400;
-               font-size: 14px;
-               line-height: 17px;
-               text-align: center;
-
-               color: #2C3E50;
-
-            }
-         }
       }
-   }
 
+      & a {
+        width: 12px;
+        height: 6.88px;
+        color: #000000;
+      }
+    }
 
-
-#header{
-  background: #1E2024;
-}
-.header{
-  display: flex;
-  padding: 30px 0;
-  &__logo{
-    display: flex;
-    & p{
-      font-weight: 400;
-      font-size: 8px;
-      line-height: 12px;
+    &__text {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      text-align: center;
       color: #FFFFFF;
+      padding-top: 23%;
     }
-  }
-  &__course{
-    display: flex;
-    align-items: center;
-    padding-left: 106px;
-    & p{
-      padding: 0 20px;
-      font-weight: 500;
-      font-size: 14px;
-      color: #9099A3;
-    }
-  }
-  &__btn{
-    padding-left: 40%;
-    & select{
-      border-radius: 10px;
-      background: transparent;
-      color: white;
-      outline: none;
-    }
-    & button{
-      width: 100px;
-      height: 40px;
-      background: #1A5CFF;
-      box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
-      border-radius: 15px;
-      margin: 0 30px;
-      transition: .7s;
-      color: white ;
-    }
-    & button:hover{
-       transition: .7s;
-       transform: translateY(-10px);
-       background: transparent;
-       border: 1px solid white;
-     }
-  }
 
+    &__block {
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 13%;
+      margin-left: 12%;
+      width: 1140px;
+      height: 160px;
+
+      background: #FFFFFF;
+      border-radius: 15px;
+
+      &--one {
+        text-align: center;
+        margin: 0 40px;
+
+        & a {
+          font-size: 22px;
+
+        }
+
+        & h4 {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24px;
+          text-align: center;
+
+          color: #2C3E50;
+
+        }
+
+        & p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: center;
+
+          color: #2C3E50;
+
+        }
+      }
+    }
+  }
 }
+
+#travel {
+  background: #1E2024;
+
+  .travel {
+    padding: 100px 0;
+
+    & h1 {
+      padding: 10px 0;
+
+      &__start {
+        width: 610px;
+        height: 400px;
+        background: #FFFFFF;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+
