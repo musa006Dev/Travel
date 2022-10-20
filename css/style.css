@@ -13,7 +13,7 @@ ul, ol, li {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -258,6 +258,130 @@ body {
 }
 #margulan .margulan__two--fon img {
   margin-top: -38px;
+}
+
+#travel {
+  background: #211e1e;
+}
+#travel h1 {
+  font-weight: 700;
+  font-size: 36px;
+  padding: 50px 0;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+#travel .travel {
+  display: flex;
+  align-items: center;
+}
+#travel .travel__title {
+  width: 673px;
+  height: 446px;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+#travel .travel__title--text {
+  padding-top: 50px;
+  margin: 0 60px;
+}
+#travel .travel__title--text h4 {
+  font-weight: 1000;
+  font-size: 22px;
+  color: #2C3E50;
+}
+#travel .travel__title--text p {
+  font-weight: 1000;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 10px 0;
+  color: #2C3E50;
+}
+#travel .travel__title--format {
+  display: flex;
+  margin: 50px 25px;
+}
+#travel .travel__title--format a {
+  margin: 0 50px;
+}
+#travel .travel__title--format a h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+  color: #2C3E50;
+}
+#travel .travel__title--format a p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #2C3E50;
+}
+#travel .travel__fon {
+  position: absolute;
+}
+#travel .travel__fon img {
+  width: 591px;
+  height: 448px;
+  margin-left: 112%;
+  padding-top: 3px;
+}
+#travel .travel__bottom {
+  display: flex;
+  margin-top: 50px;
+  position: relative;
+}
+#travel .travel__bottom--fon {
+  position: absolute;
+}
+#travel .travel__bottom--fon img {
+  width: 591px;
+  height: 448px;
+}
+#travel .travel__bottom--text {
+  width: 673px;
+  height: 446px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  margin-left: 38%;
+}
+#travel .travel__bottom--text h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #2C3E50;
+}
+#travel .travel__bottom--text p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #2C3E50;
+}
+#travel button {
+  width: 240px;
+  height: 40px;
+  left: 80px;
+  top: 2186px;
+  margin: 20px 0;
+  background: #1A5CFF;
+  box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  transition: 0.7s;
+}
+#travel button:hover {
+  transition: 0.7s;
+  transform: translateY(-10px);
+  background: none;
+  border: 1px solid white;
 }
 
 /*# sourceMappingURL=style.css.map */
