@@ -4,6 +4,7 @@
 
 
 
+
 #africa {
    background: url("../img/travel.png") no-repeat center/cover;
    min-height: 100vh;
@@ -91,5 +92,58 @@
       }
    }
 
+
+
+#header{
+  background: #1E2024;
+}
+.header{
+  display: flex;
+  padding: 30px 0;
+  &__logo{
+    display: flex;
+    & p{
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 12px;
+      color: #FFFFFF;
+    }
+  }
+  &__course{
+    display: flex;
+    align-items: center;
+    padding-left: 106px;
+    & p{
+      padding: 0 20px;
+      font-weight: 500;
+      font-size: 14px;
+      color: #9099A3;
+    }
+  }
+  &__btn{
+    padding-left: 40%;
+    & select{
+      border-radius: 10px;
+      background: transparent;
+      color: white;
+      outline: none;
+    }
+    & button{
+      width: 100px;
+      height: 40px;
+      background: #1A5CFF;
+      box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
+      border-radius: 15px;
+      margin: 0 30px;
+      transition: .7s;
+      color: white ;
+    }
+    & button:hover{
+       transition: .7s;
+       transform: translateY(-10px);
+       background: transparent;
+       border: 1px solid white;
+     }
+  }
 
 }
