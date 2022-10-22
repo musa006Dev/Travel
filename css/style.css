@@ -68,11 +68,7 @@ body {
   background: #1A5CFF;
   box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
   border-radius: 15px;
-<<<<<<< HEAD
-  margin: 0 20px;
-=======
   margin: 0 30px;
->>>>>>> 6952d287d139e8d72f4112985948834e4ef93dd9
   transition: 0.7s;
   color: white;
 }
@@ -153,24 +149,6 @@ body {
   line-height: 17px;
   text-align: center;
   color: #2C3E50;
-<<<<<<< HEAD
-}
-
-#travel {
-  background: #1E2024;
-}
-#travel .travel {
-  padding: 100px 0;
-}
-#travel .travel h1 {
-  padding: 10px 0;
-}
-#travel .travel h1__start {
-  width: 610px;
-  height: 400px;
-  background: #FFFFFF;
-  border-radius: 15px;
-=======
 }
 
 #margulan {
@@ -280,7 +258,75 @@ body {
 }
 #margulan .margulan__two--fon img {
   margin-top: -38px;
->>>>>>> 6952d287d139e8d72f4112985948834e4ef93dd9
+}
+
+#concept {
+  padding: 100px 0;
+  background: #1d273d;
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+#concept .concept details {
+  width: 800px;
+  outline: none;
+  color: black;
+  border: 2px solid #9099A3;
+  border-radius: 15px;
+  margin: 35px;
+  padding: 8px;
+}
+#concept .concept details summary {
+  border: none;
+  display: flex;
+  width: 800px;
+  outline: none;
+  list-style: none;
+}
+#concept .concept details summary .concept__btn {
+  padding: 15px 25px;
+  border-radius: 10px;
+  background: #003fcc;
+  color: white;
+  font-size: 13px;
+  max-height: 15px;
+  margin: 7px 30px;
+}
+#concept .concept details summary .concept__text {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+#concept .concept details summary .concept__text span {
+  padding: 3px 5px;
+  width: 100px;
+  height: 30px;
+  background: #9099A3;
+  border-radius: 5px;
+}
+#concept .concept details p {
+  margin: 15px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+#concept .concept__registration {
+  width: 240px;
+  height: 40px;
+  background: #1A5CFF;
+  box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
+  border-radius: 15px;
+  outline: none;
+  transition: 0.7s;
+}
+#concept .concept__registration button:hover {
+  transition: 0.7s;
+  transform: translateY(-10px);
+  background: none;
+  border: 1px solid white;
 }
 
 /*# sourceMappingURL=style.css.map */
