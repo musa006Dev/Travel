@@ -407,3 +407,170 @@
 
 
 
+#travel {
+  background:#211e1e;
+
+  & h1 {
+    font-weight: 700;
+    font-size: 36px;
+
+    padding: 50px 0;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+
+  }
+
+  .travel {
+     display: flex;
+    align-items: center;
+
+
+
+    &__title {
+      width: 673px;
+      height: 446px;
+      background: #FFFFFF;
+      border-radius: 15px;
+
+
+      &--text {
+        padding-top: 50px;
+        margin: 0 60px;
+
+        & h4 {
+          font-weight: 1000;
+          font-size: 22px;
+          color: #2C3E50;
+        }
+
+        & p {
+          font-weight: 1000;
+          font-size: 14px;
+          line-height: 21px;
+          margin: 10px 0;
+          color: #2C3E50;
+        }
+      }
+
+      &--format {
+        display: flex;
+        margin: 50px 25px;
+
+        & a {
+          margin:0 50px;
+
+          & h4 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            /* identical to box height */
+
+
+            color: #2C3E50;
+          }
+          & p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+
+            color: #2C3E50;
+
+          }
+
+        }
+
+      }
+
+    }
+
+    &__fon {
+      position: absolute;
+      & img {
+        width: 591px;
+        height: 448px;
+        margin-left: 112%;
+        padding-top: 3px;
+      }
+    }
+
+
+  }
+
+
+  .travel__bottom {
+    display: flex;
+    margin-top:50px;
+    position: relative;
+
+
+    &--fon {
+      position: absolute;
+
+      & img {
+        width: 591px;
+        height: 448px;
+      }
+
+    }
+
+    &--text {
+      width: 673px;
+      height: 446px;
+      background: #FFFFFF;
+      border-radius: 15px;
+      margin-left: 38%;
+
+
+      & h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+
+        color: #2C3E50;
+      }
+      & p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+
+        color: #2C3E50;
+
+      }
+    }
+  }
+
+  & button {
+    width: 240px;
+    height: 40px;
+    left: 80px;
+    top: 2186px;
+    margin:20px 0;
+
+    background: #1A5CFF;
+    box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
+    border-radius: 15px;
+
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+    transition:.7s;
+
+  }
+  button:hover {
+    transition: .7s;
+    transform: translateY(-10px);
+    background: none;
+    border: 1px solid white;
+
+  }
+}
+
