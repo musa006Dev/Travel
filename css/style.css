@@ -176,6 +176,12 @@ body {
   flex-wrap: wrap;
   margin: 5px 6px;
 }
+#margulan .margulan__one--block__yellow {
+  transition: 0.7s;
+  color: white;
+  cursor: alias;
+}
+#margulan .margulan__one p {
 #margulan .margulan__one--block img__yellow {
   transition: 0.7s;
 }
@@ -265,6 +271,153 @@ body {
 }
 #margulan .margulan__two--fon img {
   margin-top: -38px;
+}
+
+#concept {
+  padding: 100px 0;
+  background: #1d273d;
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+#concept .concept details {
+  width: 800px;
+  outline: none;
+  color: black;
+  border: 2px solid #9099A3;
+  border-radius: 15px;
+  margin: 35px;
+  padding: 8px;
+}
+#concept .concept details summary {
+  border: none;
+  display: flex;
+  width: 800px;
+  outline: none;
+  color: #1d273d;
+  list-style: none;
+}
+#concept .concept details summary .concept__btn {
+  padding: 15px 25px;
+  border-radius: 10px;
+  background: #003fcc;
+  color: white;
+  font-size: 13px;
+  max-height: 15px;
+  margin: 7px 30px;
+}
+#concept .concept details summary .concept__text {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+#concept .concept details summary .concept__text span {
+  padding: 3px 5px;
+  width: 100px;
+  height: 30px;
+  background: #9099A3;
+  border-radius: 5px;
+}
+#concept .concept details p {
+  margin: 15px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+#concept .concept__registration {
+  width: 240px;
+  height: 40px;
+  background: #1A5CFF;
+  box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
+  border-radius: 15px;
+  outline: none;
+  transition: 0.7s;
+}
+#concept .concept__registration:hover {
+  transition: 0.7s;
+  transform: translateY(-10px);
+  background: none;
+  border: 1px solid white;
+}
+#concept .exclusive {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: 1s;
+}
+#concept .exclusive__one {
+  width: 270px;
+  height: 250px;
+  transition: 1s;
+}
+#concept .exclusive__one:hover {
+  width: 270px;
+  height: 250px;
+  background: #1A5CFF;
+  border-radius: 20px;
+  transition: 2s;
+}
+#concept .exclusive__one--fon {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: #1A5CFF;
+  border-radius: 10px;
+}
+#concept .exclusive__one--fon hr {
+  width: 40px;
+  height: 40px;
+  margin-left: 17px;
+  border: 2px solid #FFFFFF;
+  border-radius: 3px;
+}
+#concept .exclusive__one--fon a {
+  margin-left: -31px;
+}
+#concept .exclusive h4 {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  margin: 15px;
+  color: #FFFFFF;
+}
+#concept .exclusive p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin: 15px;
+  color: #FFFFFF;
+}
+#concept .exclusive__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+#concept .exclusive__bottom h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+#concept .exclusive__bottom--one a {
+  display: flex;
+  margin: 30px;
+  font-weight: 400;
+  font-size: 17px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+#concept .exclusive__bottom--one a h6 {
+  padding: 0 16px;
 }
 
 #travel {
