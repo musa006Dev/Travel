@@ -6,6 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
@@ -30,7 +34,12 @@
                 <p>Образовательная <br>платформа <br>Кубаныча</p>
             </div>
             <div class="header__course">
-                <p>Наши курсы</p>
+
+                <a href="https://youtu.be/RfrzzLZvBhY" data-fancybox>
+                    <p>Наши курсы</p>
+                </a>
+
+
                 <p>Кайдзен клуб</p>
                 <p>Путешествия</p>
             </div>
@@ -297,14 +306,15 @@
                                 разборами и инсайтами от Маргулана Сейсембая.</p>
                         </div>
                     </div>
-                        </div></div>
-                    ...
-                </div>
+                        </div>
+            </div>
+
+
                 <!-- If we need pagination -->
                 <div class="swiper-pagination">
 
                 </div>
-            </div>
+
             <div class="program__btn">
                 <button>
                     Зарегистрироваться
@@ -523,7 +533,7 @@
                     Кайдзен клуб <br>
                     Путешествия
                 </h6>
-                <button>
+                <button class="footer__title--btn">
                     Войти
                 </button>
 
@@ -534,13 +544,40 @@
                     вопросы, пожалуйста, напишите <br>
                     нам: mail@margulan.info
                 </h6>
-                <ion-icon name="logo-facebook"></ion-icon>
-                <ion-icon name="logo-instagram"></ion-icon>
-                <ion-icon name="logo-whatsapp"></ion-icon>
-                <ion-icon name="logo-linkedin"></ion-icon>
+                <a href="#">   <ion-icon name="logo-facebook"></ion-icon>
+                    <span><ion-icon name="logo-instagram"></ion-icon></span>
+                    <span><ion-icon name="logo-whatsapp"></ion-icon></span>
+                    <ion-icon name="logo-linkedin"></ion-icon><br>
+                    <ion-icon name="logo-youtube"></ion-icon>
+                    <span><ion-icon name="logo-twitter"></ion-icon></span>
+
+                </a>
 
             </div>
 
+            <div class="footer__new">
+
+                <h5> <span>Подписка</span> на новости</h5>
+
+                <div class="footer__new--input">
+                    <input type="search" placeholder="Ваш e-mail">
+                    <button class="footer__new--input__btn">
+                        Войти
+                    </button>
+                </div>
+
+                <h6>ИП Сейсембай, г.Алматы, мкр. Нурлытау, <br>
+                    ул. Мерген, 93. <br>
+                    Идентификационный код: 661102300013</h6>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>Авторские права © 2021 AkylbekuSaid.kg</p>
+            <div class="footer__bottom--two">
+                <p>Условия оказания  услуг Политика возврата</p>
+                <img src="./img/Visa.png" alt="#">
+                <img src="./img/Mastercard.png" alt="#">
+            </div>
 
         </div>
     </div>
@@ -550,6 +587,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="js/script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
