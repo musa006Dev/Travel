@@ -191,6 +191,22 @@
 
 
         }
+          &__yellow {
+            transition: .7s;
+            yellow:hover {
+              color: white;
+              cursor: alias;
+            }
+          }
+
+        }
+
+
+        & p {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 21px;
+          text-transform: capitalize;
 
 
         &__yellow {
@@ -587,6 +603,11 @@
         }
 
       }
+      @keyframes title {
+        0% {
+          transform: translateX(-1000px) ;
+        }
+      }
 
       @keyframes title {
         0% {
@@ -611,6 +632,10 @@
         0% {
           transform: translateX(1000px);
         }
+      @keyframes fon {
+         0% {
+           transform: translateX(1000px);
+         }
       }
     }
 
@@ -631,6 +656,11 @@
       & img {
         width: 591px;
         height: 448px;
+      }
+      @keyframes fon {
+          0% {
+            transform: translateX(-1000px);
+          }
       }
 
       @keyframes fon {
@@ -719,6 +749,10 @@
   .program {
 
     h1 {
+    & h1 {
+  .program {
+
+    & h1{
       font-weight: 700;
       font-size: 36px;
       line-height: 54px;
@@ -739,6 +773,7 @@
             width: 450px;
           }
 
+ 
           &__fon {
             margin-left: 70%;
 
@@ -769,6 +804,9 @@
             }
 
             p {
+
+            }
+            & p {
               font-weight: 400;
               font-size: 14px;
               line-height: 21px;
@@ -795,6 +833,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        justify-content:center;
         width: 240px;
         height: 40px;
 

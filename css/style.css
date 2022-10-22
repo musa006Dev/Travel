@@ -183,6 +183,14 @@ body {
   cursor: alias;
 }
 #margulan .margulan__one p {
+#margulan .margulan__one--block img__yellow {
+  transition: 0.7s;
+}
+#margulan .margulan__one--block img__yellow yellow:hover {
+  color: white;
+  cursor: alias;
+}
+#margulan .margulan__one--block p {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
