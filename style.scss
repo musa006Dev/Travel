@@ -12,7 +12,7 @@
     &__logo {
       display: flex;
 
-      & p {
+      p {
         font-weight: 400;
         font-size: 8px;
         line-height: 12px;
@@ -25,7 +25,7 @@
       align-items: center;
       padding-left: 106px;
 
-      & p {
+      p {
         padding: 0 20px;
         font-weight: 500;
         font-size: 14px;
@@ -34,7 +34,7 @@
     }
 
     &__btn {
-      padding-left: 40%;
+      padding-left: 35%;
 
       & select {
         border-radius: 10px;
@@ -43,7 +43,7 @@
         outline: none;
       }
 
-      & button {
+      button {
         width: 100px;
         height: 40px;
         background: #1A5CFF;
@@ -52,9 +52,10 @@
         margin: 0 30px;
         transition: .7s;
         color: white;
+        outline: none;
       }
 
-      & button:hover {
+      button:hover {
         transition: .7s;
         transform: translateY(-10px);
         background: transparent;
@@ -76,14 +77,14 @@
       padding: 20px 40px;
       flex-wrap: wrap;
 
-      & h1 {
+      h1 {
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
         color: #FFFFFF;
       }
 
-      & p {
+      p {
         font-weight: 400;
         font-size: 14px;
         color: #2C3E50;
@@ -91,7 +92,7 @@
 
       }
 
-      & a {
+      a {
         width: 12px;
         height: 6.88px;
         color: #000000;
@@ -127,12 +128,12 @@
         text-align: center;
         margin: 0 40px;
 
-        & a {
+        a {
           font-size: 22px;
 
         }
 
-        & h4 {
+        h4 {
           font-weight: 700;
           font-size: 20px;
           line-height: 24px;
@@ -142,7 +143,7 @@
 
         }
 
-        & p {
+        p {
           font-weight: 400;
           font-size: 14px;
           line-height: 17px;
@@ -184,7 +185,7 @@
         background: rgba(255, 255, 255, 0.2);
         border-radius: 15px;
 
-        & img {
+        img {
           flex-wrap: wrap;
           margin: 5px 6px;
 
@@ -214,7 +215,8 @@
           cursor: alias;
         }
       }
-      & p {
+
+      p {
         font-weight: 700;
         font-size: 14px;
         line-height: 21px;
@@ -223,12 +225,13 @@
         color: #FFFFFF;
 
       }
+
       &--button {
 
         margin: 20px 0;
 
 
-        & h1 {
+        h1 {
           font-weight: 700;
           font-size: 38px;
           line-height: 54px;
@@ -237,7 +240,7 @@
           color: #FFFFFF;
         }
 
-        & button {
+        button {
           width: 180px;
           height: 40px;
           left: 80px;
@@ -266,7 +269,7 @@
           border: 1px solid white;
         }
 
-        & h6 {
+        h6 {
           font-weight: 400;
           font-size: 14px;
           line-height: 21px;
@@ -276,8 +279,6 @@
         }
       }
     }
-
-
 
 
     &__two {
@@ -292,7 +293,7 @@
       &--text {
         margin: 0 20px;
 
-        & p {
+        p {
           margin-top: 50px;
           font-weight: 400;
           font-size: 12px;
@@ -301,7 +302,7 @@
           color: #9099A3;
         }
 
-        & h1 {
+        h1 {
           font-weight: 800;
           font-size: 34px;
           text-transform: capitalize;
@@ -310,7 +311,7 @@
 
         }
 
-        & h6 {
+        h6 {
           font-weight: 500;
           font-size: 16px;
           line-height: 24px;
@@ -325,21 +326,19 @@
       &--fon {
         margin-left: 45%;
 
-        & img {
+        img {
           margin-top: -38px;
         }
       }
     }
   }
-  }
-
-
+}
 
 
 #concept {
   padding: 100px 0;
 
-  background: #1d273d;
+  background: #211e1e;
   font-weight: 700;
   font-size: 36px;
   color: #FFFFFF;
@@ -364,7 +363,7 @@
         display: flex;
         width: 800px;
         outline: none;
-        color:  #1d273d;
+        color: #1d273d;
 
         list-style: none;
 
@@ -519,7 +518,8 @@
         font-size: 17px;
         text-transform: capitalize;
         color: #FFFFFF;
-        h6{
+
+        h6 {
           padding: 0 16px;
         }
       }
@@ -531,7 +531,7 @@
 #travel {
   background: #211e1e;
 
-  & h1 {
+  h1 {
     font-weight: 700;
     font-size: 36px;
 
@@ -559,13 +559,13 @@
         padding-top: 50px;
         margin: 0 60px;
 
-        & h4 {
+        h4 {
           font-weight: 1000;
           font-size: 22px;
           color: #2C3E50;
         }
 
-        & p {
+        p {
           font-weight: 1000;
           font-size: 14px;
           line-height: 21px;
@@ -578,10 +578,10 @@
         display: flex;
         margin: 50px 25px;
 
-        & a {
+        a {
           margin: 0 50px;
 
-          & h4 {
+          h4 {
             font-weight: 700;
             font-size: 20px;
             line-height: 30px;
@@ -591,7 +591,7 @@
             color: #2C3E50;
           }
 
-          & p {
+          p {
             font-weight: 400;
             font-size: 14px;
             line-height: 21px;
@@ -621,7 +621,7 @@
       position: absolute;
       animation: fon 2s alternate linear;
 
-      & img {
+      img {
         width: 591px;
         height: 448px;
         margin-left: 112%;
@@ -680,7 +680,7 @@
 
       animation: text 2s alternate linear;
 
-      & h4 {
+      h4 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -691,7 +691,7 @@
         color: #2C3E50;
       }
 
-      & p {
+      p {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -744,10 +744,11 @@
 
 #program {
   padding-top: 50px;
-  background: #030303;
+  background: #211e1e;
 
   .program {
 
+    h1 {
     & h1 {
   .program {
 
@@ -767,7 +768,7 @@
           align-items: center;
           justify-content: flex-start;
 
-          & img {
+          img {
             position: absolute;
             width: 450px;
           }
@@ -789,7 +790,7 @@
             border-radius: 15px;
 
 
-            & h4 {
+            h4 {
               font-weight: 700;
               font-size: 20px;
               color: #2C3E50;
@@ -802,6 +803,7 @@
 
             }
 
+            p {
 
             }
             & p {
@@ -826,7 +828,7 @@
       align-items: center;
       justify-content: center;
 
-      & button {
+      button {
         margin: 30px 50px;
         display: flex;
         align-items: center;
@@ -860,9 +862,159 @@
   }
 }
 
+#register {
+  background: #211e1e;
+
+  .register {
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+      h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        color: #FFFFFF;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        color: #9099A3;
+      }
+    }
+
+    &__input {
+      position: relative;
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        color: #9099A3;
+      }
+
+      &--one {
+
+
+        input {
+          width: 500px;
+          height: 50px;
+          padding: 0 15px;
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 15px;
+
+        }
+      }
+
+      &--kg {
+        position: absolute;
+        width: 20px;
+        height: 11.3px;
+        left: 21px;
+        top: 103px;
+      }
+
+      &--two {
+        margin: 10px 0;
+
+        input {
+          width: 500px;
+          height: 50px;
+          padding: 0 15px;
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 15px;
+
+        }
+
+      }
+
+      &--three {
+
+        input {
+          width: 500px;
+          height: 50px;
+          padding: 0 15px;
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 15px;
+
+        }
+      }
+
+      &--button {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+
+        button {
+          width: 230px;
+          height: 50px;
+          background: #1A5CFF;
+          box-shadow: 0 5px 8px rgba(26, 92, 255, 0.2);
+          border-radius: 15px;
+          margin: 0 30px;
+          transition: .7s;
+        }
+
+        button:hover {
+          transition: .7s;
+          transform: translateY(-10px);
+          background: none;
+          border: 1px solid white;
+        }
+      }
+    }
+
+
+  }
+
+  .register__bottom {
+    display: flex;
+    justify-content:space-between;
+    &--text{
+      h1{
+        font-weight: 700;
+        font-size: 36px;
+        color: #FFFFFF;
+        padding: 20px 0;
+      }
+    }
+    details{
+      padding: 30px 0;
+
+      summary{
+        outline: none;
+        color:  #211e1e;
+        width: 800px;
+        h3{
+          font-weight: 400;
+          font-size: 20px;
+          color: #FFFFFF;
+        }
+
+
+        }
+      p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+          }
+
+    }
+    hr{
+        width: 722px;
+        height: 0;
+        color: white;
+        left: 398px;
+        top: 5034px;
+        border: 0.5px solid #9099A3;
+      }
+  }
+}
+
 
 #footer {
-  background: black;
+  background: #211e1e;
 
   .footer {
 
