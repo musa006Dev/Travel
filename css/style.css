@@ -176,6 +176,13 @@ body {
   flex-wrap: wrap;
   margin: 5px 6px;
 }
+#margulan .margulan__one--block img__yellow {
+  transition: 0.7s;
+}
+#margulan .margulan__one--block img__yellow yellow:hover {
+  color: white;
+  cursor: alias;
+}
 #margulan .margulan__one--block p {
   font-weight: 700;
   font-size: 14px;
@@ -279,6 +286,7 @@ body {
   height: 446px;
   background: #FFFFFF;
   border-radius: 15px;
+  animation: title 2s alternate linear;
 }
 #travel .travel__title--text {
   padding-top: 50px;
@@ -316,14 +324,25 @@ body {
   line-height: 21px;
   color: #2C3E50;
 }
+@keyframes title {
+  0% {
+    transform: translateX(-1000px);
+  }
+}
 #travel .travel__fon {
   position: absolute;
+  animation: fon 2s alternate linear;
 }
 #travel .travel__fon img {
   width: 591px;
   height: 448px;
   margin-left: 112%;
   padding-top: 3px;
+}
+@keyframes fon {
+  0% {
+    transform: translateX(1000px);
+  }
 }
 #travel .travel__bottom {
   display: flex;
@@ -332,10 +351,16 @@ body {
 }
 #travel .travel__bottom--fon {
   position: absolute;
+  animation: fon 2s alternate linear;
 }
 #travel .travel__bottom--fon img {
   width: 591px;
   height: 448px;
+}
+@keyframes fon {
+  0% {
+    transform: translateX(-1000px);
+  }
 }
 #travel .travel__bottom--text {
   width: 673px;
@@ -343,6 +368,7 @@ body {
   background: #FFFFFF;
   border-radius: 15px;
   margin-left: 38%;
+  animation: text 2s alternate linear;
 }
 #travel .travel__bottom--text h4 {
   display: flex;
@@ -351,6 +377,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
+  margin-top: 100px;
   color: #2C3E50;
 }
 #travel .travel__bottom--text p {
@@ -361,6 +388,11 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #2C3E50;
+}
+@keyframes text {
+  0% {
+    transform: translateX(-1000px);
+  }
 }
 #travel button {
   width: 240px;
@@ -382,6 +414,87 @@ body {
   transform: translateY(-10px);
   background: none;
   border: 1px solid white;
+}
+
+#program {
+  padding-top: 50px;
+  background: #030303;
+}
+#program .program h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  color: #fff9f9;
+}
+#program .program .swiper .swiper-wrapper .swiper-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#program .program .swiper .swiper-wrapper .swiper-slide img {
+  position: absolute;
+  width: 450px;
+}
+#program .program .swiper .swiper-wrapper .swiper-slide__fon {
+  margin-left: 70%;
+}
+#program .program .swiper .swiper-wrapper .swiper-slide__text {
+  width: 658px;
+  height: 300px;
+  left: 80px;
+  top: 0;
+  margin-left: 28%;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+#program .program .swiper .swiper-wrapper .swiper-slide__text h4 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #2C3E50;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  margin-left: 75px;
+  padding-top: 30px;
+}
+#program .program .swiper .swiper-wrapper .swiper-slide__text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-left: 75px;
+  color: #2C3E50;
+}
+#program .program__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#program .program__btn button {
+  margin: 30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 40px;
+  background: #1A5CFF;
+  box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  transition: 0.7s;
+  color: #FFFFFF;
+}
+#program .program__btn button:hover {
+  transition: 0.7s;
+  transform: translateY(-10px);
+  background: none;
+  border: 1px solid white;
+}
+
+#footer {
+  background: black;
 }
 
 /*# sourceMappingURL=style.css.map */
