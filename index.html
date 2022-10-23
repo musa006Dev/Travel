@@ -18,8 +18,9 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
 
 </head>
@@ -27,6 +28,19 @@
 
 
 <header id="header">
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+
+        <ul class="menu__box">
+            <li><a class="menu__item" href="#">Главная</a></li>
+            <li><a class="menu__item" href="#">Аутстаффинг</a></li>
+            <li><a class="menu__item" href="#">Блог</a></li>
+            <li><a class="menu__item" href="#">Контакты</a></li>
+        </ul>
+    </div>
     <div class="container">
         <div class="header">
             <div class="header__logo">
@@ -51,8 +65,49 @@
                     </select>
                 </label>
                 <button>Войти</button>
+                <div class="about--modal">
+                    <div class="about--modal__block">
+                        <div class="about--modal__block--square">
+                            <h1 class="about--modal__block--square__close">X</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, beatae deleniti eum
+                                explicabo facere laborum laudantium nesciunt nisi quidem quod quos suscipit, veritatis.
+                                Aliquid consequuntur culpa, cupiditate delectus dolor ea est in, maiores quos recusandae
+                                soluta vel velit! Asperiores assumenda cum delectus dicta ducimus, fuga ipsum iusto
+                                necessitatibus nihil reiciendis, repudiandae voluptate voluptates? Adipisci commodi
+                                expedita facere fugit hic iste, labore, laborum minus molestias nulla recusandae saepe
+                                sequi totam veniam v60pxoluptate! Ipsa ipsum laudantium quia tenetur ut? Culpa eum quibusdam
+                                repudiandae. Aut dicta eligendi ex, ipsam laboriosam reiciendis repellat vel vitae. Ab
+                                aperiam assumenda earum libero modi numquam, quibusdam reiciendis voluptate! Laborum
+                                modi nisi quas recusandae! Ab aliquid, assumenda at atque delectus doloribus eaque earum
+                                error est facilis fuga minus nihil nulla officiis perferendis possimus recusandae sequi
+                                sint tempore veniam? Cumque doloribus ex exercitationem itaque labore laboriosam modi
+                                nisi numquam, officia omnis pariatur perspiciatis possimus provident quas quia quidem
+                                quis repudiandae, sint suscipit totam unde vitae voluptate. Ad aperiam assumenda beatae
+                                cum, cupiditate dicta dolorem doloremque ducimus ea enim esse ex excepturi expedita
+                                explicabo fugiat, fugit in inventore, ipsum iste itaque laborum maiores molestias
+                                mollitia nesciunt nostrum numquam odio placeat provident quas quia quod ratione repellat
+                                sed sint tempora totam unde. Alias asperiores, aspernatur consequatur, consequuntur
+                                corporis cumque cupiditate dicta doloremque eaque est facere fuga fugiat impedit ipsam
+                                itaque laborum minima molestias nam non perferendis porro quibusdam quod ratione rem
+                                repellendus rerum, saepe sapiente soluta sunt veritatis? Autem blanditiis consequatur,
+                                dolor ea exercitationem fuga labore laboriosam minima molestias nam quae quas qui quia
+                                repudiandae saepe tempore tenetur unde voluptas voluptates voluptatum! Adipisci alias at
+                                beatae debitis deserunt dolorem error excepturi id inventore ipsam officia possimus quas
+                                quis recusandae repellat reprehenderit saepe, tempore, temporibus totam vitae!
+                                Accusantium amet deleniti dolor est fuga incidunt ipsam maiores, obcaecati quia sapiente
+                                temporibus ullam. Labore necessitatibus nisi ut! A, adipisci atque autem consequuntur
+                                dignissimos dolore dolores eius et eveniet, impedit, incidunt neque nihil nobis non
+                                numquam odit quae quaerat quam quod rem soluta vero voluptas voluptatem! Aspernatur
+                                doloribus ea, esse est exercitationem ipsa labore magnam odio quasi quia sequi, tenetur,
+                                veritatis. Ab at fugiat ipsum libero molestiae optio rem tenetur velit. Accusantium ad
+                                aperiam asperiores aspernatur assumenda atque aut cupiditate delectus deleniti deserunt
+                                dolore dolores eius enim, esse est excepturi exercitationem fugit id illo, iste
+                                laboriosam minima modi nam nobis perferendis praesentium quidem quis quisquam recusandae
+                                tenetur. Beatae eligendi illum nisi non quisquam, tempore unde.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
     </div>
 </header>
@@ -118,6 +173,7 @@
         </div>
     </div>
 </section>
+
 
 <section id="margulan">
     <div class="container">
@@ -188,8 +244,6 @@
     </div>
 
 </section>
-
-
 
 <section id="travel">
     <div class="container">
@@ -297,7 +351,7 @@
                                 разборами и инсайтами от Маргулана Сейсембая.</p>
                         </div>
                     </div>
-                    <div class="swiper-slide"> <img src="img/nature2.png" alt="img">
+                    <div class="swiper-slide"><img src="img/nature2.png" alt="img">
                         <div class="swiper-slide__text">
                             <h4>Маршрут Ронгаи</h4>
                             <p>Этот тур - не просто экспедиция, а насыщенное трансформационное <br>
@@ -306,14 +360,14 @@
                                 разборами и инсайтами от Маргулана Сейсембая.</p>
                         </div>
                     </div>
-                        </div>
+                </div>
             </div>
 
 
-                <!-- If we need pagination -->
-                <div class="swiper-pagination">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination">
 
-                </div>
+            </div>
 
             <div class="program__btn">
                 <button>
@@ -339,7 +393,7 @@
                         <span>21.01.2022</span>
                     </div>
                 </summary>
-                    <p>Утром, после пробуждения и вкусного завтрака, проводим утренний <br>
+                <p>Утром, после пробуждения и вкусного завтрака, проводим утренний <br>
                     брифинг с инструктором. Нам организовывают трансфер к началу <br>
                     маршрута у северного входа в Национальный парк Килиманджаро - <br>
                     воротам Налемуру (2020 м). После получения разрешения на <br>
@@ -354,7 +408,7 @@
                         <span>23.01.2022</span>
                     </div>
                 </summary>
-                    <p>Утром, после пробуждения и вкусного завтрака, проводим утренний <br>
+                <p>Утром, после пробуждения и вкусного завтрака, проводим утренний <br>
                     брифинг с инструктором. Нам организовывают трансфер к началу <br>
                     маршрута у северного входа в Национальный парк Килиманджаро - <br>
                     воротам Налемуру (2020 м). После получения разрешения на <br>
@@ -369,7 +423,7 @@
                         <span>23.01.2022</span>
                     </div>
                 </summary>
-                    <p>Утром, после пробуждения и вкусного завтрака, проводим утренний <br>
+                <p>Утром, после пробуждения и вкусного завтрака, проводим утренний <br>
                     брифинг с инструктором. Нам организовывают трансфер к началу <br>
                     маршрута у северного входа в Национальный парк Килиманджаро - <br>
                     воротам Налемуру (2020 м). После получения разрешения на <br>
@@ -384,7 +438,7 @@
                         <span>23.01.2022</span>
                     </div>
                 </summary>
-                    <p>Утром, после пробуждения и вкусного завтрака, проводим утренний <br>
+                <p>Утром, после пробуждения и вкусного завтрака, проводим утренний <br>
                     брифинг с инструктором. Нам организовывают трансфер к началу <br>
                     маршрута у северного входа в Национальный парк Килиманджаро - <br>
                     воротам Налемуру (2020 м). После получения разрешения на <br>
@@ -399,7 +453,7 @@
                         <span>23.01.2022</span>
                     </div>
                 </summary>
-                    <p>Утром, после пробуждения и вкусного завтрака, проводим утренний <br>
+                <p>Утром, после пробуждения и вкусного завтрака, проводим утренний <br>
                     брифинг с инструктором. Нам организовывают трансфер к началу <br>
                     маршрута у северного входа в Национальный парк Килиманджаро - <br>
                     воротам Налемуру (2020 м). После получения разрешения на <br>
@@ -478,7 +532,8 @@
             <div class="exclusive__bottom--one">
                 <a href="#">
                     <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM21.7071 8.70711C22.0976 8.31658 22.0976 7.68342 21.7071 7.29289L15.3431 0.928932C14.9526 0.538408 14.3195 0.538408 13.9289 0.928932C13.5384 1.31946 13.5384 1.95262 13.9289 2.34315L19.5858 8L13.9289 13.6569C13.5384 14.0474 13.5384 14.6805 13.9289 15.0711C14.3195 15.4616 14.9526 15.4616 15.3431 15.0711L21.7071 8.70711ZM1 9L21 9V7L1 7L1 9Z" fill="#1A5CFF"/>
+                        <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM21.7071 8.70711C22.0976 8.31658 22.0976 7.68342 21.7071 7.29289L15.3431 0.928932C14.9526 0.538408 14.3195 0.538408 13.9289 0.928932C13.5384 1.31946 13.5384 1.95262 13.9289 2.34315L19.5858 8L13.9289 13.6569C13.5384 14.0474 13.5384 14.6805 13.9289 15.0711C14.3195 15.4616 14.9526 15.4616 15.3431 15.0711L21.7071 8.70711ZM1 9L21 9V7L1 7L1 9Z"
+                              fill="#1A5CFF"/>
                     </svg>
                     <h6>Анализировать и устранять типичные ошибки руководителей в <br>
                         управлении командой
@@ -486,25 +541,29 @@
                 </a>
                 <a href="#">
                     <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM21.7071 8.70711C22.0976 8.31658 22.0976 7.68342 21.7071 7.29289L15.3431 0.928932C14.9526 0.538408 14.3195 0.538408 13.9289 0.928932C13.5384 1.31946 13.5384 1.95262 13.9289 2.34315L19.5858 8L13.9289 13.6569C13.5384 14.0474 13.5384 14.6805 13.9289 15.0711C14.3195 15.4616 14.9526 15.4616 15.3431 15.0711L21.7071 8.70711ZM1 9L21 9V7L1 7L1 9Z" fill="#1A5CFF"/>
+                        <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM21.7071 8.70711C22.0976 8.31658 22.0976 7.68342 21.7071 7.29289L15.3431 0.928932C14.9526 0.538408 14.3195 0.538408 13.9289 0.928932C13.5384 1.31946 13.5384 1.95262 13.9289 2.34315L19.5858 8L13.9289 13.6569C13.5384 14.0474 13.5384 14.6805 13.9289 15.0711C14.3195 15.4616 14.9526 15.4616 15.3431 15.0711L21.7071 8.70711ZM1 9L21 9V7L1 7L1 9Z"
+                              fill="#1A5CFF"/>
                     </svg>
                     <h6>Внедрять специальные приемы работы с людьми и командой</h6>
                 </a>
                 <a href="#">
                     <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM21.7071 8.70711C22.0976 8.31658 22.0976 7.68342 21.7071 7.29289L15.3431 0.928932C14.9526 0.538408 14.3195 0.538408 13.9289 0.928932C13.5384 1.31946 13.5384 1.95262 13.9289 2.34315L19.5858 8L13.9289 13.6569C13.5384 14.0474 13.5384 14.6805 13.9289 15.0711C14.3195 15.4616 14.9526 15.4616 15.3431 15.0711L21.7071 8.70711ZM1 9L21 9V7L1 7L1 9Z" fill="#1A5CFF"/>
+                        <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM21.7071 8.70711C22.0976 8.31658 22.0976 7.68342 21.7071 7.29289L15.3431 0.928932C14.9526 0.538408 14.3195 0.538408 13.9289 0.928932C13.5384 1.31946 13.5384 1.95262 13.9289 2.34315L19.5858 8L13.9289 13.6569C13.5384 14.0474 13.5384 14.6805 13.9289 15.0711C14.3195 15.4616 14.9526 15.4616 15.3431 15.0711L21.7071 8.70711ZM1 9L21 9V7L1 7L1 9Z"
+                              fill="#1A5CFF"/>
                     </svg>
                     <h6>Создавать команду и эффективно ею управлять в любом проекте</h6>
                 </a>
                 <a href="#">
                     <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM21.7071 8.70711C22.0976 8.31658 22.0976 7.68342 21.7071 7.29289L15.3431 0.928932C14.9526 0.538408 14.3195 0.538408 13.9289 0.928932C13.5384 1.31946 13.5384 1.95262 13.9289 2.34315L19.5858 8L13.9289 13.6569C13.5384 14.0474 13.5384 14.6805 13.9289 15.0711C14.3195 15.4616 14.9526 15.4616 15.3431 15.0711L21.7071 8.70711ZM1 9L21 9V7L1 7L1 9Z" fill="#1A5CFF"/>
+                        <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM21.7071 8.70711C22.0976 8.31658 22.0976 7.68342 21.7071 7.29289L15.3431 0.928932C14.9526 0.538408 14.3195 0.538408 13.9289 0.928932C13.5384 1.31946 13.5384 1.95262 13.9289 2.34315L19.5858 8L13.9289 13.6569C13.5384 14.0474 13.5384 14.6805 13.9289 15.0711C14.3195 15.4616 14.9526 15.4616 15.3431 15.0711L21.7071 8.70711ZM1 9L21 9V7L1 7L1 9Z"
+                              fill="#1A5CFF"/>
                     </svg>
                     <h6>Правильно прогнозировать и масштабировать результат работы команды</h6>
                 </a>
                 <a href="#">
                     <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM21.7071 8.70711C22.0976 8.31658 22.0976 7.68342 21.7071 7.29289L15.3431 0.928932C14.9526 0.538408 14.3195 0.538408 13.9289 0.928932C13.5384 1.31946 13.5384 1.95262 13.9289 2.34315L19.5858 8L13.9289 13.6569C13.5384 14.0474 13.5384 14.6805 13.9289 15.0711C14.3195 15.4616 14.9526 15.4616 15.3431 15.0711L21.7071 8.70711ZM1 9L21 9V7L1 7L1 9Z" fill="#1A5CFF"/>
+                        <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM21.7071 8.70711C22.0976 8.31658 22.0976 7.68342 21.7071 7.29289L15.3431 0.928932C14.9526 0.538408 14.3195 0.538408 13.9289 0.928932C13.5384 1.31946 13.5384 1.95262 13.9289 2.34315L19.5858 8L13.9289 13.6569C13.5384 14.0474 13.5384 14.6805 13.9289 15.0711C14.3195 15.4616 14.9526 15.4616 15.3431 15.0711L21.7071 8.70711ZM1 9L21 9V7L1 7L1 9Z"
+                              fill="#1A5CFF"/>
                     </svg>
                     <h6>Правильно подходить к вопросам увольнения и продвижения по карьерной лестнице</h6>
                 </a>
@@ -513,6 +572,7 @@
     </div>
 
 </section>
+
 
 <section id="register">
     <div class="container">
@@ -528,30 +588,27 @@
                     <p>ФИО *</p>
                     <input type="" placeholder="Иван Петров">
                 </div>
-               <div class="register__input--two">
-                   <p>Номер телефона *</p>
-                   <input type="text" placeholder="         +996 550 01 22 08">
-                   <img src="img/Flag_of_Kyrgyzstan.svg.png" alt="" class="register__input--kg">
-               </div>
-               <div class="register__input--three">
-                   <p>E-mail *</p>
-                   <input type="" placeholder="example@mail.com">
-               </div>
+                <div class="register__input--two">
+                    <p>Номер телефона *</p>
+                    <input type="text" placeholder="         +996 550 01 22 08">
+                    <img src="img/Flag_of_Kyrgyzstan.svg.png" alt="" class="register__input--kg">
+                </div>
+                <div class="register__input--three">
+                    <p>E-mail *</p>
+                    <input type="" placeholder="example@mail.com">
+                </div>
                 <div class="register__input--button">
                     <p>Ваши данные надежно защищены <br>
                         и не будут переданы третьим лицам</p>
                     <button>Отправить</button>
                 </div>
-
             </div>
-
         </div>
         <div class="register__bottom">
             <div class="register__bottom--text">
                 <h1>ОСТАЛИСЬ <br>
                     ВОПРОСЫ?</h1>
                 <img src="./img/vopros.svg" alt="img">
-                
             </div>
             <div class="register__bottom--akkord">
                 <details>
@@ -575,13 +632,10 @@
                 </details>
                 <hr>
             </div>
-
-
         </div>
-
     </div>
-
 </section>
+
 
 <footer id="footer">
     <div class="container">
@@ -604,10 +658,12 @@
                     вопросы, пожалуйста, напишите <br>
                     нам: mail@margulan.info
                 </h6>
-                <a href="#">   <ion-icon name="logo-facebook"></ion-icon>
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
                     <span><ion-icon name="logo-instagram"></ion-icon></span>
                     <span><ion-icon name="logo-whatsapp"></ion-icon></span>
-                    <ion-icon name="logo-linkedin"></ion-icon><br>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <br>
                     <ion-icon name="logo-youtube"></ion-icon>
                     <span><ion-icon name="logo-twitter"></ion-icon></span>
 
@@ -617,7 +673,7 @@
 
             <div class="footer__new">
 
-                <h5> <span>Подписка</span> на новости</h5>
+                <h5><span>Подписка</span> на новости</h5>
 
                 <div class="footer__new--input">
                     <input type="search" placeholder="Ваш e-mail">
@@ -634,7 +690,7 @@
         <div class="footer__bottom">
             <p>Авторские права © 2021 AkylbekuSaid.kg</p>
             <div class="footer__bottom--two">
-                <p>Условия оказания  услуг Политика возврата</p>
+                <p>Условия оказания услуг Политика возврата</p>
                 <img src="./img/Visa.png" alt="#">
                 <img src="./img/Mastercard.png" alt="#">
             </div>
@@ -643,7 +699,6 @@
     </div>
 
 </footer>
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

@@ -18,3 +18,15 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-scrollbar',
     },
 });
+
+
+const btn = document.querySelector('.header__btn button')
+btn.addEventListener('click',()=> {
+    document.querySelector('.about--modal').style.display = 'block'
+})
+
+
+const btnClose = document.querySelector('.about--modal__block--square__close')
+btnClose.addEventListener('click',()=> {
+    document.querySelector('.about--modal').style.display = 'none'
+})
