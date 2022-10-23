@@ -27,14 +27,22 @@ body {
 }
 
 #header {
+  display: flex;
+  align-items: center;
   background: #1E2024;
   position: fixed;
   width: 100%;
   z-index: 999;
 }
+#header .hamburger-menu {
+  padding-top: 10px;
+}
 #header .header {
   display: flex;
   padding: 30px 0;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 #header .header__logo {
   display: flex;
@@ -66,62 +74,20 @@ body {
   outline: none;
 }
 #header .header__btn button {
-  width: 100px;
-  height: 40px;
+  padding: 10px 30px;
+  color: white;
+  transition: 0.7s;
   background: #1A5CFF;
   box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
   border-radius: 15px;
-  margin: 0 30px;
-  transition: 0.7s;
-  color: white;
+  cursor: pointer;
+  flex-wrap: wrap;
+  transform: translateY -10px;
   outline: none;
 }
 #header .header__btn button:hover {
-  transition: 0.7s;
-  transform: translateY(-10px);
   background: transparent;
-  border: 1px solid white;
 }
-#header .header__btn .about--modal {
-  display: none;
-}
-#header .header__btn .about--modal__block {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.49);
-  backdrop-filter: blur(5px);
-  position: fixed;
-  left: 0;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#header .header__btn .about--modal__block--square {
-  width: 1171px;
-  height: 603px;
-  overflow-y: scroll;
-  background: #FFFFFF;
-  border: 2px solid blue;
-  border-radius: 38px;
-  position: relative;
-}
-#header .header__btn .about--modal__block--square__close {
-  color: red;
-  font-size: 30px;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  font-family: "Montserrat", sans-serif;
-}
-#header .header__btn .about--modal__block--square p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: black;
-  padding: 30px 60px;
-}
-
 #africa {
   background: url("../img/travel.png") no-repeat center/cover;
   min-height: 100vh;
@@ -201,6 +167,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 115px 0;
 }
 #margulan .margulan__one--block {
@@ -210,8 +177,6 @@ body {
   flex-wrap: wrap;
   width: 510px;
   height: 217px;
-  left: 80px;
-  top: 702px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
 }
@@ -245,7 +210,7 @@ body {
   color: #FFFFFF;
 }
 #margulan .margulan__one--button {
-  margin: 20px 0;
+  padding: 20px 0;
 }
 #margulan .margulan__one--button h1 {
   font-weight: 700;
@@ -255,19 +220,20 @@ body {
   color: #FFFFFF;
 }
 #margulan .margulan__one--button button {
-  width: 200px;
+  padding: 10px 30px;
   color: white;
-  height: 40px;
+  transition: 0.7s;
   background: #1A5CFF;
   box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
   border-radius: 15px;
-  transition: 0.7s;
+  cursor: pointer;
+  flex-wrap: wrap;
+  transform: translateY -10px;
+  outline: none;
+  margin: 20px 0;
 }
 #margulan .margulan__one--button button:hover {
-  transition: 0.7s;
-  transform: translateY(-10px);
-  background: none;
-  border: 1px solid white;
+  background: transparent;
 }
 #margulan .margulan__one--button h6 {
   font-weight: 400;
@@ -279,7 +245,6 @@ body {
 #margulan .margulan__two {
   width: 510px;
   height: 520px;
-  left: 610px;
   top: 702px;
   background: #FFFFFF;
   border-radius: 15px;
@@ -308,9 +273,6 @@ body {
   text-transform: capitalize;
   color: #2C3E50;
 }
-#margulan .margulan__two--fon {
-  margin-left: 45%;
-}
 #margulan .margulan__two--fon img {
   margin-top: -38px;
 }
@@ -328,6 +290,7 @@ body {
 #travel .travel {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 #travel .travel__title {
   width: 673px;
@@ -363,7 +326,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
-  /* identical to box height */
   color: #2C3E50;
 }
 #travel .travel__title--format a p {
@@ -382,28 +344,37 @@ body {
     transform: translateX(-1000px);
   }
 }
-#travel .travel__fon {
-  position: absolute;
-  animation: fon 2s alternate linear;
+#travel .travel__left {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
 }
-#travel .travel__fon img {
+#travel .travel__left--fon {
+  position: absolute;
+  display: flex;
+}
+#travel .travel__left img {
   width: 591px;
   height: 448px;
-  margin-left: 112%;
+  display: flex;
+  position: absolute;
+  margin-left: -10px;
   padding-top: 3px;
+  animation: img 2s alternate linear;
 }
-@keyframes fon {
+@keyframes img {
   0% {
     transform: translateX(1000px);
   }
 }
 #travel .travel__bottom {
   display: flex;
-  margin-top: 50px;
+  flex-wrap: wrap;
   position: relative;
+  margin: 40px 0;
 }
 #travel .travel__bottom--fon {
-  position: absolute;
   animation: fon 2s alternate linear;
 }
 #travel .travel__bottom--fon img {
@@ -417,16 +388,17 @@ body {
 }
 @keyframes fon {
   0% {
-    transform: translateX(-1000px);
+    transform: translateX(1000px);
   }
 }
 #travel .travel__bottom--text {
   width: 673px;
   height: 446px;
   background: #FFFFFF;
-  border-radius: 15px;
-  margin-left: 38%;
   animation: text 2s alternate linear;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  justify-content: flex-end;
 }
 #travel .travel__bottom--text h4 {
   display: flex;
@@ -453,20 +425,19 @@ body {
   }
 }
 #travel button {
-  width: 240px;
-  height: 40px;
+  padding: 10px 30px;
+  color: white;
+  transition: 0.7s;
   background: #1A5CFF;
   box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
   border-radius: 15px;
-  transition: 0.7s;
-  margin: 30px 0;
-  color: white;
+  cursor: pointer;
+  flex-wrap: wrap;
+  transform: translateY -10px;
+  outline: none;
 }
 #travel button:hover {
-  transition: 0.7s;
-  transform: translateY(-10px);
-  background: none;
-  border: 1px solid white;
+  background: transparent;
 }
 
 #program {
@@ -524,19 +495,19 @@ body {
   padding: 30px 0;
 }
 #program .program__btn button {
-  width: 240px;
-  height: 40px;
+  padding: 10px 30px;
+  color: white;
+  transition: 0.7s;
   background: #1A5CFF;
   box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
   border-radius: 15px;
-  transition: 0.7s;
-  color: white;
+  cursor: pointer;
+  flex-wrap: wrap;
+  transform: translateY -10px;
+  outline: none;
 }
 #program .program__btn button:hover {
-  transition: 0.7s;
-  transform: translateY(-10px);
-  background: none;
-  border: 1px solid white;
+  background: transparent;
 }
 
 #concept {
@@ -552,8 +523,9 @@ body {
   color: black;
   border: 2px solid #9099A3;
   border-radius: 15px;
-  margin: 35px;
-  padding: 8px;
+  margin: 35px 0;
+  padding: 8px 0;
+  flex-wrap: wrap;
 }
 #concept .concept details summary {
   border: none;
@@ -561,6 +533,7 @@ body {
   width: 800px;
   outline: none;
   color: #211e1e;
+  flex-wrap: wrap;
   list-style: none;
 }
 #concept .concept details summary .concept__btn {
@@ -578,6 +551,9 @@ body {
   text-transform: capitalize;
   color: #FFFFFF;
 }
+#concept .concept details summary .concept__text h1 {
+  margin: 7px 0;
+}
 #concept .concept details summary .concept__text span {
   padding: 3px 5px;
   width: 100px;
@@ -594,20 +570,20 @@ body {
   color: #FFFFFF;
 }
 #concept .concept__registration {
-  width: 240px;
-  height: 40px;
+  padding: 10px 30px;
+  color: white;
+  transition: 0.7s;
   background: #1A5CFF;
   box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
   border-radius: 15px;
+  cursor: pointer;
+  flex-wrap: wrap;
+  transform: translateY -10px;
   outline: none;
-  transition: 0.7s;
-  color: white;
+  margin: 20px 0;
 }
 #concept .concept__registration:hover {
-  transition: 0.7s;
-  transform: translateY(-10px);
-  background: none;
-  border: 1px solid white;
+  background: transparent;
 }
 #concept .exclusive {
   padding: 100px;
@@ -644,7 +620,7 @@ body {
   border-radius: 3px;
 }
 #concept .exclusive__one--fon a {
-  margin-left: -31px;
+  margin: -31px;
 }
 #concept .exclusive h4 {
   font-weight: 900;
@@ -772,20 +748,20 @@ body {
   margin: 20px 0;
 }
 #register .register__input--button button {
-  width: 230px;
-  height: 50px;
-  background: #1A5CFF;
-  box-shadow: 0 5px 8px rgba(26, 92, 255, 0.2);
-  border-radius: 15px;
-  margin: 0 30px;
-  transition: 0.7s;
+  padding: 10px 30px;
   color: white;
+  transition: 0.7s;
+  background: #1A5CFF;
+  box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
+  border-radius: 15px;
+  cursor: pointer;
+  flex-wrap: wrap;
+  transform: translateY -10px;
+  outline: none;
+  margin: 0 30px;
 }
 #register .register__input--button button:hover {
-  transition: 0.7s;
-  transform: translateY(-10px);
-  background: none;
-  border: 1px solid white;
+  background: transparent;
 }
 #register .register__input--button p {
   font-weight: 400;
@@ -810,8 +786,6 @@ body {
   width: 722px;
   height: 0;
   color: white;
-  left: 398px;
-  top: 5084px;
   border: 0.5px solid #9099A3;
 }
 #register .register__bottom summary {
@@ -856,21 +830,20 @@ body {
   margin: 10px 0;
 }
 #footer .footer__title--btn {
-  width: 80px;
-  height: 30px;
+  padding: 10px 30px;
+  color: white;
+  transition: 0.7s;
   background: #1A5CFF;
-  box-shadow: 0 5px 8px rgba(26, 92, 255, 0.2);
+  box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
   border-radius: 15px;
-  font-weight: 900;
-  font-size: 14px;
-  color: #FFFFFF;
-  transition: 0.7s;
+  cursor: pointer;
+  flex-wrap: wrap;
+  transform: translateY -10px;
+  outline: none;
+  margin: 0 20px;
 }
-#footer .footer__title button:hover {
-  transition: 0.7s;
-  transform: translateY(-10px);
+#footer .footer__title--btn:hover {
   background: transparent;
-  border: 1px solid white;
 }
 #footer .footer__icon h4 {
   font-weight: 900;
@@ -914,23 +887,19 @@ body {
   outline: none;
 }
 #footer .footer__new--input__btn {
-  width: 80px;
-  height: 30px;
-  position: absolute;
-  right: 100px;
+  padding: 10px 30px;
+  color: white;
+  transition: 0.7s;
   background: #1A5CFF;
-  box-shadow: 0 5px 8px rgba(26, 92, 255, 0.2);
-  border-radius: 13px;
-  font-weight: 900;
-  font-size: 14px;
-  color: #FFFFFF;
-  transition: 0.7s;
+  box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
+  border-radius: 15px;
+  cursor: pointer;
+  flex-wrap: wrap;
+  transform: translateY -10px;
+  outline: none;
 }
-#footer .footer__new--input button:hover {
-  transition: 0.7s;
-  transform: translateY(-10px);
+#footer .footer__new--input__btn:hover {
   background: transparent;
-  border: 1px solid white;
 }
 #footer .footer__new h6 {
   font-weight: 400;
@@ -983,8 +952,8 @@ body {
   display: flex;
   align-items: center;
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 40px;
+  left: 28px;
   width: 26px;
   height: 26px;
   cursor: pointer;
@@ -1024,7 +993,7 @@ body {
   padding: 80px 0;
   list-style: none;
   background-color: #ECEFF1;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
   transition-duration: 0.25s;
 }
 
