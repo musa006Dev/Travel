@@ -2,6 +2,8 @@
 @import "mixins";
 
 
+
+
 #header {
   background: #1E2024;
   position: fixed;
@@ -295,6 +297,7 @@
 
         button {
           width: 200px;
+          color: white;
           height: 40px;
           background: #1A5CFF;
           box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
