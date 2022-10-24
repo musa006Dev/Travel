@@ -59,46 +59,46 @@
       }
     }
   }
-  .about__modal {
-    display: none;
-    &__block { width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.49);
-      backdrop-filter: blur(5px);
-      position: fixed;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-
-      &--square {
-        width: 1171px;
-        height: 603px;
-        overflow-y: scroll;
-        background: #FFFFFF;
-        border: 2px solid blue;
-        border-radius: 38px;
-        position: relative;
-
-        &__close {
-          color: red;
-          font-size: 30px;
-          position: absolute;
-          right: 0;
-          top: 0;
-          font-family: "Montserrat", sans-serif;
-
-        }
-
-        p {
-          font-family: "Montserrat", sans-serif;
-          font-weight: 400;
-          font-size: 18px;
-          color: black;
-          padding: 30px 60px;
-        }
+  //.about__modal {
+  //  display: none;
+  //  &__block { width: 100%;
+  //    height: 100%;
+  //    background: rgba(0, 0, 0, 0.49);
+  //    backdrop-filter: blur(5px);
+  //    position: fixed;
+  //    display: flex;
+  //    align-items: center;
+  //    justify-content: center;
+  //
+  //
+  //    &--square {
+  //      width: 1171px;
+  //      height: 603px;
+  //      overflow-y: scroll;
+  //      background: #FFFFFF;
+  //      border: 2px solid blue;
+  //      border-radius: 38px;
+  //      position: relative;
+  //
+  //      &__close {
+  //        color: red;
+  //        font-size: 30px;
+  //        position: absolute;
+  //        right: 0;
+  //        top: 0;
+  //        font-family: "Montserrat", sans-serif;
+  //
+  //      }
+  //
+  //      p {
+  //        font-family: "Montserrat", sans-serif;
+  //        font-weight: 400;
+  //        font-size: 18px;
+  //        color: black;
+  //        padding: 30px 60px;
+  //      }
   }
-}
+
 
 #africa {
   background: url("../img/travel.png") no-repeat center/cover;

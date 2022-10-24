@@ -88,6 +88,7 @@ body {
 #header .header__btn button:hover {
   background: transparent;
 }
+
 #africa {
   background: url("../img/travel.png") no-repeat center/cover;
   min-height: 100vh;
