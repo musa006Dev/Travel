@@ -434,7 +434,7 @@
     outline: none;
   }
   #header .header__btn {
-    padding-left: 68%;
+    padding-left: 63%;
     margin-top: -29px;
   }
   #africa .africa__text {
@@ -494,7 +494,13 @@
     outline: none;
     margin: 10px 0;
   }
-
+  #margulan .margulan__two {
+    width: 359px;
+    height: 520px;
+    top: 702px;
+    background: #FFFFFF;
+    border-radius: 15px;
+  }
 
   #margulan .margulan__two--text h1 {
     font-weight: 800;
@@ -512,6 +518,7 @@
   }
   #margulan .margulan__two--fon img {
     margin-top: 21px;
+    margin-left: 23px;
   }
   #travel h1 {
     font-weight: 700;
@@ -525,17 +532,18 @@
     background: #FFFFFF;
     border-radius: 15px;
     animation: title 2s alternate linear;
+    margin-left: -2px;
   }
   #travel .travel__left img {
     width: 362px;
     height: 300px;
     display: flex;
     position: absolute;
-    margin-left: -1px;
     padding-top: 3px;
     animation: img 2s alternate linear;
     border-radius: 10px;
-    margin-top: 298px;
+    margin-top: 746px;
+    margin-left: -361px;
   }
   #travel .travel__title--text h4 {
     font-weight: 1000;
@@ -570,17 +578,17 @@
     height: 274px;
     border-radius: 10px;
     margin-top: 311px;
+    margin-left: -2px;
   }
 
   #travel .travel__bottom--text {
-    width: 358px;
+    width: 360px;
     height: 252px;
     background: #FFFFFF;
-    margin-left: 0%;
+    margin-left: -1%;
     border-radius: 15px;
     animation: text 2s alternate linear;
   }
-
   #travel .travel__bottom--text h4 {
     display: flex;
     align-items: center;
@@ -832,6 +840,20 @@
     margin: 20px 0;
     flex-direction: column;
   }
+  #register .register__input--button button {
+    padding: 10px 30px;
+    color: white;
+    transition: 0.7s;
+    background: #1A5CFF;
+    box-shadow: 0 8px 20px rgb(26 92 255 / 20%);
+    border-radius: 15px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    transform: translateY -10px;
+    outline: none;
+    margin: 0 30px;
+    margin-left: 5px;
+  }
   #register .register__input--button p {
     font-weight: 400;
     font-size: 10px;
@@ -1020,7 +1042,7 @@
     font-size: 9px;
   }
   #header .header__btn {
-    padding-left: 68%;
+    padding-left: 61%;
     margin-top: -34px;
   }
 
@@ -1063,6 +1085,10 @@
   #margulan .margulan__one--block {
     width: 90%;
     height: auto;
+  }
+  #margulan .margulan__one--block img {
+    flex-wrap: wrap;
+    margin: 12px 10px;
   }
   #margulan .margulan__one--button h1 {
     font-weight: 700;
@@ -1119,7 +1145,7 @@
   }
   #travel .travel__title {
     width: 339px;
-    height: 450px;
+    height: 324px;
     background: #FFFFFF;
     border-radius: 15px;
     animation: title 2s alternate linear;
@@ -1129,14 +1155,34 @@
     padding-top: 50px;
     margin: 0 33px;
   }
-
+  #travel .travel__title--text p {
+    font-weight: 1000;
+    font-size: 11px;
+    line-height: 21px;
+    margin: 10px 0;
+    color: #2C3E50;
+    margin-left: 0px;
+  }
+  #travel .travel__title--text h4 {
+    font-weight: 1000;
+    font-size: 15px;
+    color: #2C3E50;
+    margin-left: 0px;
+  }
+  #travel .travel__left {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: -129px;
+  }
   #travel .travel__left img {
     width: 339px;
     height: 269px;
     display: flex;
     position: absolute;
-    margin-left: 0;
-    margin-top: 268px;
+    margin-left: -339px;
+    margin-top: 719px;
     border-radius: 10px;
     animation: img 2s alternate linear;
   }
@@ -1158,7 +1204,7 @@
     width: 339px;
     height: 302px;
     border-radius: 10px;
-    margin-top: 273px;
+    margin-top: 250px;
   }
   #travel .travel__bottom--text {
     width: 339px;
@@ -1442,7 +1488,7 @@
   }
   #register .register__input {
     position: relative;
-    margin: 0 55px;
+    margin: 0 0px;
   }
   #register .register__bottom {
     display: flex;
@@ -1489,12 +1535,26 @@
     font-size: 14px;
     color: #FFFFFF;
   }
+  #concept .concept details summary .concept__text {
+    font-weight: 700;
+    font-size: 5px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-left: 97px;
+    margin-top: -37px;
+  }
+
+
   #footer .footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  #footer .footer img {
+    margin-top: -45px;
+  }
+
   #footer .footer__title h6 {
     font-weight: 400;
     font-size: 11px;
@@ -1504,7 +1564,7 @@
   }
   #footer .footer__title--btn {
     padding: 5px 24px;
-    display: flex;
+
     align-items: center;
     justify-content: center;
     color: white;
@@ -1518,6 +1578,7 @@
     outline: none;
     margin: 17px 31px;
     margin-left: -60px;
+    display: none;
   }
   #footer .footer__icon h4 {
     font-weight: 900;
@@ -1553,7 +1614,6 @@
     flex-wrap: wrap;
     transform: translateY -10px;
     outline: none;
-    margin-left: 31px;
   }
   #footer .footer__new h6 {
     font-weight: 400;
@@ -1603,15 +1663,15 @@
   #margulan .margulan__one--block {
     width: 90%;
     height: auto;
+    margin-left: 3px;
   }
 
-  .header__logo p {
+  #header .header__logo p {
     font-weight: 400;
-    font-size: 6px;
-    line-height: 10px;
+    font-size: 5px;
+    line-height: 9px;
     color: #FFFFFF;
-    margin-top: 6px;
-    margin-left: 5px;
+    margin-top: 12px;
   }
 
   .menu__btn {
@@ -1625,6 +1685,7 @@
     cursor: pointer;
     z-index: 1;
     margin-left: -20px;
+    margin-top: 7px;
   }
   #header .header__course {
     display: none;
@@ -1645,9 +1706,8 @@
     font-size: 10px;
     outline: none;
   }
-
   #header .header__btn {
-    padding-left: 65%;
+    padding-left: 57%;
     margin-top: -37px;
   }
 
@@ -1741,11 +1801,11 @@
     color: #2C3E50;
   }
   #margulan .margulan__two--fon img {
-    margin-top: 56px;
+    margin-top: 14px;
   }
   #margulan .margulan__two {
-    width: 479px;
-    height: 520px;
+    width: 299px;
+    height: 478px;
     top: 558px;
     background: #FFFFFF;
     border-radius: 15px;
@@ -1764,6 +1824,7 @@
     color: #2C3E50;
     display: flex;
     justify-content: flex-start;
+    margin-left: -10px;
   }
   #travel .travel__title--text p {
     font-weight: 900;
@@ -1771,7 +1832,7 @@
     line-height: 21px;
     margin: 33px 0;
     color: #2C3E50;
-    margin-left: -36px;
+    margin-left: -10px;
   }
   #travel .travel__title {
     width: 289px;
@@ -1784,11 +1845,11 @@
     width: 289px;
     height: 220px;
     display: flex;
-    margin-left: 0;
+    margin-left: -289px;
     padding-top: 3px;
     animation: img 2s alternate linear;
     border-radius: 10px;
-    margin-top: 218px;
+    margin-top: 693px;
   }
   #travel .travel__bottom--fon img {
     width: 289px;
@@ -1897,12 +1958,13 @@
     margin-left: 0px;
   }
 
-  #program .program .swiper .swiper-wrapper .swiper-slide__text {
-    width: 180px;
-    height: 178px;
-    margin-left: 60%;
-    background: #FFFFFF;
-    border-radius: 15px;
+  #concept .concept details summary .concept__text {
+    font-weight: 700;
+    font-size: 5px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-left: 32px;
+    margin-top: -9px;
   }
 
   #program .program .swiper .swiper-wrapper .swiper-slide img {
@@ -1913,20 +1975,20 @@
 
   #program .program .swiper .swiper-wrapper .swiper-slide__text h4 {
     font-weight: 700;
-    font-size: 9px;
+    font-size: 15px;
     color: #2C3E50;
     margin: 20px 0;
     display: flex;
     align-items: center;
     padding-top: 2px;
-    margin-left: 73px;
+    margin-left: 27px;
   }
 
   #program .program .swiper .swiper-wrapper .swiper-slide__text p {
     font-weight: 400;
-    font-size: 9px;
-    line-height: 7px;
-    margin-left: 75px;
+    font-size: 11px;
+    line-height: 11px;
+    margin-left: 30px;
     color: #2C3E50;
   }
 
@@ -1946,11 +2008,11 @@
   }
 
   #concept .concept details summary .concept__btn {
-    padding: 4px 8px;
+    padding: 5px 8px;
     border-radius: 10px;
     background: #003fcc;
     color: white;
-    font-size: 11px;
+    font-size: 9px;
     max-height: 15px;
     margin-left: -32px;
   }
