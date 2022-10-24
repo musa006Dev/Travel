@@ -26,6 +26,13 @@ body {
   margin: 0 auto;
 }
 
+.scroll {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
 #header {
   display: flex;
   align-items: center;
